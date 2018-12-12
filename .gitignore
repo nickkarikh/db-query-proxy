@@ -1,0 +1,13 @@
+moc/
+obj/
+uic/
+Makefile
+*.pro.user*
+*.o
+ui_*.h
+ui_*.cpp
+qrc_*.cpp
+*.qm
+bin/
+!bin/templates/
+!bin/images/
