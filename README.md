@@ -15,6 +15,8 @@ Currently only PostgreSQL protocol is supported.
 In case of users interest, other database protocols may be
 implemented also like MySQL, MSSQL, Oracle, etc.
 
+Binary packages are also not provided yet.
+
 Contact me if you need additional info.
 
 ## Build
