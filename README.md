@@ -55,3 +55,13 @@ Quick example:
     query = SELECT \* FROM tablename WHERE (.+)
     action = rewrite
     rewrite = SELECT * FROM tablename WHERE (col3 >= '$(now-1M)') AND $(1)
+
+psql (connecting to db-query-proxy instead of direct connection to PostgreSQL):
+
+    psql -U postgres -h localhost -p 5433 dbname
+    dbname=# SELECT * FROM tablename WHERE id=1;
+
+Log output:
+
+    debug: ORIGINAL query: SELECT * FROM tablename WHERE id=1;
+    debug: MODIFIED query (rule 1): SELECT * FROM tablename WHERE (col3 >= '2018-11-12 11:25:23.0+00') AND id=1;
