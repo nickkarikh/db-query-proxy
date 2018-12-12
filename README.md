@@ -42,7 +42,7 @@ For example, on CentOS 7:
     # cd to bin dir
     cd ../bin
     # copy example config file to /etc
-    sudo cp ../etc/db-query-proxy.conf
+    sudo cp ../etc/db-query-proxy.conf /etc
     # run
     ./db-query-proxy
 
